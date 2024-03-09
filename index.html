@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quran Calculator</h1>
+
+    <!-- Form -->
+    <form id="pagesPerDay">
+        <p>Enter how many pages you will read a day and the program will tell you how long it will take you to khatm the Quran</p>
+        <label for="pages">Pages: </label>
+        <input type="number" min=1 max=604 name="pages" id="pages"/>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Result -->
+    <p>It will take you <span id="result"></span> days to khatm the Quran</p>
+
+    <!--  Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
