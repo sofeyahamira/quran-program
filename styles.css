@@ -42,3 +42,11 @@ input {
 .cred {
     font-size: 1rem;
 }
+
+a {
+    color: white
+}
+
+a:visited {
+    color: gray
+}
