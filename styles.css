@@ -39,6 +39,13 @@ input {
     color: inherit;
 }  
 
+input:focus {
+    /* Style the border for the focused input */
+    outline: none;
+    box-shadow: 0 0 5px rgb(144,193,75);
+  }
+  
+
 .cred {
     font-size: 1rem;
 }
