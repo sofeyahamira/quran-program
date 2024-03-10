@@ -8,33 +8,34 @@
 </head>
 <body>
     <h1>Quran Calculator</h1>
+    <div class="container">
 
-    <!-- Form -->
-    <form id="pagesPerDay">
-        <p>Enter how many pages you will read a day and the program will tell you how long it will take you to khatm the Quran</p>
-        <label for="pages">Pages: </label>
-        <input type="number" min=1 max=604 name="pages" id="pages"/>
+        <!-- Form -->
+        <form id="pagesPerDay">
+            <p>Enter how many pages you will read a day and the program will tell you how long it will take you to khatm the Quran</p>
+            <label for="pages">Pages: </label>
+            <input type="number" min=1 max=604 name="pages" id="pages"/><br><br>
 
-        <button type="submit">Submit</button>
-    </form>
+            <button type="submit">Submit</button>
+        </form>
 
-    <!-- Result -->
-    <p>It will take you <span id="result"></span> days to khatm the Quran</p>
+        <!-- Result -->
+        <p><span id="result"></span></p>
 
-    <hr>
+        <hr>
 
-    <!-- Form 2 -->
-    <form id="dayGoal">
-        <p>Enter the amount of time (days) you want to take to khatm the Quran and the program will tell you how many pages you should read</p>
-        <label for="days">Days: </label>
-        <input type="number" min=1 name="days" id="days"/>
-        
-        <button type="submit">Submit</button>
-    </form>
+        <!-- Form 2 -->
+        <form id="dayGoal">
+            <p>Enter the amount of time (days) you want to take to khatm the Quran and the program will tell you how many pages you should read</p>
+            <label for="days">Days: </label>
+            <input type="number" min=1 name="days" id="days"/><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
 
-    <!-- Result 2 -->
-    <p>You need to read <span id="goalResult"></span> pages per day
-
+        <!-- Result 2 -->
+        <p><span id="goalResult"></span></p>
+    </div>
     <!--  Scripts -->
     <script src="script.js"></script>
 </body>

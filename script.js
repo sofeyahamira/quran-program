@@ -17,11 +17,10 @@ document.getElementById("pagesPerDay").addEventListener('submit', function(event
         calculateDaysNeeded(pages);
         
         // Displaying Result
-        result.innerHTML = daysNeeded;
+        result.innerHTML = `It will take you ${daysNeeded} days to khatm the Quran`;
 
       } else {
         // Error Msg
-        alert("Please Enter a valid number");
         result.textContent = 'Please enter valid numbers';
       }
 });
@@ -45,11 +44,10 @@ document.getElementById("dayGoal").addEventListener('submit', function(event) {
       calculatePagesNeeded(days);
       
       // Displaying Result
-      goalResult.innerHTML = pagesNeeded;
+      goalResult.innerHTML = `You need to read ${pagesNeeded} pages per day`;
 
     } else {
       // Error Msg
-      alert("Please Enter a valid number");
-      result.textContent = 'Please enter valid numbers';
+      goalResult.textContent = 'Please enter valid numbers';
     }
 });
