@@ -38,3 +38,7 @@ input {
     padding: 5px;
     color: inherit;
 }  
+
+.cred {
+    font-size: 1rem;
+}
