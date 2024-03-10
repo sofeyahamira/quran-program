@@ -37,6 +37,7 @@ input {
     border-radius: 5px;
     padding: 5px;
     color: inherit;
+    font-family: inherit;
 }  
 
 input:focus {
