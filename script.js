@@ -65,7 +65,7 @@ document.getElementById("dayGoal").addEventListener('submit', function(event) {
           dayCell.textContent = `Day ${i}`;
           pageCell.textContent = i * pagesNeeded;
           dayHeading.textContent = "Day";
-          pageHeading.textContent = "Pages to Read";
+          pageHeading.textContent = "End Page";
     
           // Append the cells to the row
           row.appendChild(dayCell);
