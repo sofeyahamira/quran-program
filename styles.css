@@ -58,3 +58,13 @@ a {
 a:visited {
     color: gray
 }
+
+table {
+    width: 50%;
+
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+}
