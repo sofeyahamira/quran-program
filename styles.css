@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Dosis', sans-serif;
     text-align: center;
     background-color: rgb(59,104,52);
     color: #DEF8D6;

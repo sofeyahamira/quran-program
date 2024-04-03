@@ -47,32 +47,39 @@ document.getElementById("dayGoal").addEventListener('submit', function(event) {
       goalResult.innerHTML = `You need to read ${pagesNeeded} pages per day`;
 
       // Creating Schedule
-      for (let i = 1; i <= days; i++) {
-        // Create a new row and cells for the table
-        const table = document.getElementById("schedule");
-        const dayHeading = document.getElementById("day-heading");
-        const pageHeading = document.getElementById("page-heading");
-        const row = document.createElement("tr");
-        const dayCell = document.createElement("td");
-        const pageCell = document.createElement("td");
-  
-        // Populate the cells with the day number and the page number
-        dayCell.textContent = `Day ${i}`;
-        pageCell.textContent = i * pagesNeeded;
-        dayHeading.textContent = "Day";
-        pageHeading.textContent = "Pages to Read";
-  
-        // Append the cells to the row
-        row.appendChild(dayCell);
-        row.appendChild(pageCell);
-  
-        // Append the row to the table
-        table.querySelector("tbody").appendChild(row);
+      if (days < 31){
+        const schedule = document.getElementById("schedule");
+        schedule.textContent = "Schedule";
 
-        // Adding for the table
-        table.style.border = "5px solid rgb(149, 255, 0)";
-        dayCell.style.padding = "5px";
-        pageCell.style.padding = "5px";  
+        for (let i = 1; i <= days; i++) {
+          // Create a new row and cells for the table
+          const table = document.getElementById("table-schedule");
+          const dayHeading = document.getElementById("day-heading");
+          const pageHeading = document.getElementById("page-heading");
+          const row = document.createElement("tr");
+          const dayCell = document.createElement("td");
+          const pageCell = document.createElement("td");
+          const tbody = document.querySelector("#table-schedule tbody");
+    
+          // Populate the cells with the day number and the page number
+          dayCell.textContent = `Day ${i}`;
+          pageCell.textContent = i * pagesNeeded;
+          dayHeading.textContent = "Day";
+          pageHeading.textContent = "Pages to Read";
+    
+          // Append the cells to the row
+          row.appendChild(dayCell);
+          row.appendChild(pageCell);
+    
+          // Append the row to the table
+          // table.querySelector("tbody").appendChild(row);
+          tbody.appendChild(row);
+            
+          // Adding for the table
+          table.style.border = "5px solid rgb(149, 255, 0)";
+          dayCell.style.padding = "5px";
+          pageCell.style.padding = "5px";
+        }
       }
   
 
