@@ -6,4 +6,4 @@ there are 2 programs
 
 the code has comments detailing what the code is meant to do
 
-link to the website: https://swiftsaa.github.io/quran-program/
+link to the website: https://sofeyahamira.github.io/quran-program/
